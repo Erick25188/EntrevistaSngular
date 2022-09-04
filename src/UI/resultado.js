@@ -1,5 +1,4 @@
 import { LitElement, html } from 'lit-element';
-import { ComponenteNoVisible } from '../datos/componenteNoVisible';
 
 class Resultado extends LitElement {
   static get properties() {
@@ -14,8 +13,28 @@ class Resultado extends LitElement {
 
   render() {
     return html`
-      <div>
-        <p>El resultado es ${this.resultado}</p>
+    <style>
+      .success{
+        background-color:green;
+        color:white;
+        padding:20px;
+        margin:10px;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: center;
+        width:50vw;
+      }
+      span{
+        font-size: 1.6em;
+        font-weight: 900;
+      }
+    </style>
+      <div class="success flex">
+        <p>El resultado es <span>${this.resultado}</span></p>
       </div>
     `;
   }

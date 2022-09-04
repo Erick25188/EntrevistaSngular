@@ -13,7 +13,6 @@ export class ComponenteNoVisible {
 
   triangular() {
     let total;
-
     if (this.num > 0) {
       total = (this.num * (this.num + 1)) / 2;
       return total;
@@ -29,14 +28,12 @@ export class ComponenteNoVisible {
     fibonacci[1] = 1;
     if (this.num < 2) {
       ultimo = this.num;
-
       return;
     } else {
       for (var i = 2; i < this.num; i++) {
         fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
       }
       ultimo = fibonacci[fibonacci.length - 1];
-
       return ultimo;
     }
   }
@@ -44,6 +41,7 @@ export class ComponenteNoVisible {
   primo() {
     let arreglo = [];
     let y = 0;
+
     const esPrimo = (numero) => {
       // Casos especiales
       if (numero == 0 || numero == 1 || numero == 4) return false;
@@ -63,6 +61,7 @@ export class ComponenteNoVisible {
     return arreglo[arreglo.length - 1];
   }
 
+  
   secuencia() {
     this.resultado =
       (3 * this.primo(this.num) * this.triangular(this.num)) /

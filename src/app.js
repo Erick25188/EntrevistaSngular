@@ -27,8 +27,22 @@ class app extends LitElement {
 
   render() {
     return html`
+    <style>
+      div{
+        margin-top:50px
+      }
+      .flex{
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+    <div class="flex">
       <entrada-numero @calculando=${this.setResult}></entrada-numero>
+      </div>
+      <div class="flex result">
       ${this.printResult()}
+      </div>
+     
     `;
   }
 }
