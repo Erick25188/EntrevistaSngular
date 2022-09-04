@@ -1,0 +1,16 @@
+{
+  "name": "secuencia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "polymer serve -o",
+    "otro-script": "oujsdkhsdf"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit-element": "^3.2.2"
+  }
+}
